@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta  charset='utf-8'/>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'/>
+    <title >Survey </title>
+    <link rel='stylesheet' href='index.css'>
+  </head>
+  <body>
+    <div class='container'>
+        <header>
+            <h1 id='title'>FreeCodeCamp Survey Form </h1>
+            <p id='description'> Thank you for taking the time to help us improve the patform</p>
+        </header>
+        <form id='survey-form' method='post'>
+            <section id='contact-info'>
+                <label for='name' id='name-label'>Name</label>
+                <input type='text' id='name' placeholder='Enter your name' required/>
+                
+                <label for='email' id='email-label' > Email</label>
+                <input type='email' id='email' placeholder='Enter your email' required/>
+                
+                <label for='number' id='number-label'> Age</label>
+                <input type='number' id='number' min='10' max='99' placeholder='Age'/>
+            </section>
+            <section class='roles'>
+                <p>Which option best describes your current role?</p>
+
+            <select id='dropdown'>
+                 <option >select current role</option>
+                <option > Student</option>
+                 <option>Full time job</option >
+                 <option>Full time learner</option>
+                <option>Other</option>
+            </select>
+            <section id='radio-section'>
+                <p>Would you recommand freeCodeCamp to a friend?</p>
+                <label for='radio-button' id='definitely'><input type='radio' name='radio-button' value='definitely'  > Defenitely</label>
+                <label id='maybe'for='radio-button'><input  type='radio' name='radio-button' value='maybe'/> Maybe</label>
+                <label id='not-sure'for='radio-button'><input type='radio' name='radio-button'    value='not-sure'/> Not sure</label>
+             </section>
+            <section id=check-box>
+                <p id='check-box-title'>What would you like to improve </p><span>(Check all that apply)</span>
+                <label><input type='checkbox' value='ft-end'/>Front-end projects</label>
+                <label><input type='checkbox' value='bk-end'/>Back-end projects</label>
+                <label> <input type='checkbox' value='data'/>Data visualization</label>
+                <label><input type='checkbox' value='open-source'/> Open source community</label>
+                <label><input type='checkbox' value='challenge'/>Challengies</label>
+                <label><input type='checkbox' value='gitter'/>Gitter help rooms</label>
+                 <label><input type='checkbox' value='videos'/> Videos</label>
+                <label><input type='checkbox' value='meetups'/>City meetups</label>
+                <label><input type='checkbox' value='forum'/>Forum</label>
+                <label><input type='checkbox' value='wiki'/>Wiki</label>
+                <label><input type='checkbox' value='courses'/>Additional Courses</label>
+            </section>
+            <section>
+                <p>Any comments or suggestions?</p>
+                <textarea placeholder='Enter your comment here...' row='5px' cols='12px'></textarea>
+            </section>
+            <button type='submit' id='submit'>Submit</button>
+        </form>
+    </div>
+  </body>
+</html>
